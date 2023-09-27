@@ -1,0 +1,45 @@
+.body{
+    margin: 0;
+    font-family: "Heebo",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666565;
+    background-color: #F1F8FF;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.root{
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
+.section-title{
+    position: relative;
+    display: inline-block;
+}
+.ff-secondary{
+    font-family: Pacifico,cursive;
+}
+.text-primary{
+    color: #FEA116!important;
+}
+.btn {
+    font-family: Nunito,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.btn-primary {
+    color: #000;
+    background-color: #FEA116;
+    border-color: #FEA116;
+}
+.btn.btn-primary, .btn.btn-secondary {
+    color: #fff;
+}
+@media only screen and (max-width: 280px){
+    .video-video{
+        width: 161%;
+        margin-left:-66px;
+    }
+}
