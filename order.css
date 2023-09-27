@@ -38,8 +38,8 @@
     color: #fff;
 }
 @media only screen and (max-width: 280px){
-    .video-video{
+    .video, .video, .source,{
         width: 161%;
-        margin-left:-66px;
+        margin-left: -66px;
     }
 }
