@@ -14,7 +14,6 @@
    margin:0; padding:0;
    box-sizing: border-box;
    outline: none; border: none;
-   text-decoration: none;
 }
 
 *::selection{
@@ -211,6 +210,7 @@ section{
 
 #menu-btn{
    display: none;
+   
 }
 
 .header .flex .profile{
@@ -920,19 +920,6 @@ section{
    background-color: var(--black);
    color:var(--white);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer .grid{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -1016,6 +1003,7 @@ section{
 
    #menu-btn{
       display: inline-block;
+      
    }
 
    .header .flex .navbar{
@@ -1035,6 +1023,7 @@ section{
 
    .header .flex .navbar.active{
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      z-index: 2;
    }
 
 }
