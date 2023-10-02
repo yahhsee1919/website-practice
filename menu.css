@@ -104,3 +104,54 @@
       font-weight: 600;
       font-style: italic;
   }
+  /* Dimension Surface Duo --540-- */
+  @media only screen and (max-width: 540px)
+    {
+    .menus {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .single-menu .menu-content h5 {
+        text-transform: capitalize;
+        font-size: 22px;
+        border-bottom: 1px dashed #222;
+        padding-bottom: 24px;
+        margin-bottom: 10px;
+    }
+  } 
+  /* Samsung Galaxy A51/71 --412-- */
+  @media only screen and (max-width: 412px)
+    {
+    .menus {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .single-menu .menu-content h5 {
+        text-transform: capitalize;
+        font-size: 22px;
+        border-bottom: 1px dashed #222;
+        padding-bottom: 24px;
+        margin-bottom: 10px;
+    }
+  }  
+  /* Galaxy Fold 280 */
+  @media only screen and (max-width: 280px)
+  {
+    .menus {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .single-menu .menu-content h5 {
+        text-transform: capitalize;
+        font-size: 22px;
+        border-bottom: 1px dashed #222;
+        padding-bottom: 24px;
+        margin-bottom: 10px;
+    }
+ }    

@@ -37,9 +37,24 @@
 .btn.btn-primary, .btn.btn-secondary {
     color: #fff;
 }
+/* Galaxy Fold --912--*/
+@media only screen and (max-width: 912px){
+    .video, .video, .source{
+        width: 71%;
+        margin-left: 302px;
+    }
+}
+/* Galaxy Fold --412--*/
+@media only screen and (max-width: 412px){
+    .video, .video, .source{
+        width: 71%;
+        margin-left: 302px;
+    }
+}
+/* Galaxy Fold --280--*/
 @media only screen and (max-width: 280px){
-    .video, .video, .source,{
-        width: 161%;
-        margin-left: -66px;
+    .video, .video, .source{
+        width: 90%;
+        margin-left: 302px;
     }
 }
