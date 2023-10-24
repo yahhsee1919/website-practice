@@ -223,6 +223,7 @@ section{
    width: 30rem;
    display: none;
    animation: fadeIn .2s linear;
+   z-index: 2;
 }
 
 .header .flex .profile.active{

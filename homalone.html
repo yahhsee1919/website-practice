@@ -53,18 +53,18 @@
           
           <p class="name"><?= $fetch_profile['name']; ?></p>
           <div class="flex">
-             <a href="profile.php" class="btn">profile</a>
+             <a href="profile.html" class="btn">profile</a>
              <a href="components/user_logout.php" onclick="return confirm('logout from this website?');" class="delete-btn">logout</a>
           </div>
           <p class="account">
-             <a href="login.php">login</a> or
-             <a href="register.php">register</a>
+             <a href="login.html">login</a> or
+             <a href="register.html">register</a>
           </p> 
           <?php
              }else{
           ?>
-             <p class="name">please login first!</p>
-             <a href="login.php" class="btn">login</a>
+             <p class="name">Please Register or Login</p>
+             <a href="login.html" class="btn">login</a>
           <?php
            }
           ?>
