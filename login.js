@@ -29,8 +29,7 @@ app.post('/login', function (request, response) {
 
     //mysql query to fetch the username and password from the database using the payload from
     //the front end.
-    const myQuery = `SELECT * FROM first_database.login;
-    where username = "${usernameFromFrontEnd}" and password = "${passwordFromFrontEnd}"`;
+    const myQuery = `SELECT * FROM first_database.users where username = "${usernameFromFrontEnd}" and password = "${passwordFromFrontEnd}"`;
     //in short select user from database where username = payload.username and password = payload.password
   
 

@@ -23,21 +23,39 @@
     <p><a href="homalone.html">HOME</a></p> 
  </div>
 
+ <style>
+    .box1 {
+      width: 352px; 
+      height: 40px; 
+    }
+    .box2 {
+      width: 352px; 
+      height: 40px; 
+    }
+  </style>
+
+
 
 
 <!-- admin login form section starts  -->
 
 <section class="form-container">
 
-   <form action="" method="POST">
-      <h3>login now</h3>
-      
-      
-      <input id="username" type="text" name="name" maxlength="20" required placeholder="enter your username" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-      
-      <input id="password" type="password" name="pass" maxlength="20" required placeholder="enter your password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
-      <input id="login" type="submit" value="login now" name="submit" class="btn">
-   </form>
+   <div>
+      <h3 style="font-size: 68px;">Log in now</h3>
+      <br>
+      <br>
+      <br>
+      <input id="username" type="text" name="name" maxlength="20" required placeholder="enter your username" class="box1" oninput="this.value = this.value.replace(/\s/g, '')">
+      <br>
+      <br>
+      <br>
+      <input id="password" type="password" name="pass" maxlength="20" required placeholder="enter your password" class="box2" oninput="this.value = this.value.replace(/\s/g, '')">
+      <br>
+      <br>
+      <br>
+      <button id="login" value="login now" name="submit" class="btn">SUBMIT</button>
+   </div>
 
 </section>
 <script>

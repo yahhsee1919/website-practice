@@ -29,45 +29,6 @@ app.post('/register', function (request, response) {
 
     //mysql query to fetch the username and password from the database using the payload from
     //the front end.
-    const myQuery = `SELECT * FROM first_database.register
-    where username = "${usernameFromFrontEnd}" and password = "${passwordFromFrontEnd}"`;
-    //in short select user from database where username = payload.username and password = payload.password
-  
-
-    //mysql package function that we will call to establish or create connection to our database
-    //create connection to our mysql database
-    const connection = mysql.createConnection({
-        host: "localhost", // ip or hostname
-        port: 3307,        // port if not using default port which is 3306
-        user: "johndoe",      //database username 
-        password: "password123",      //database password
-        database: "first_database" // our database name
-      });
-      
-      //once a connection is created, connect.
-      connection.connect(function(err) {
-        if (err) throw err; // nagka error, mag crash yung server
-        //once successfully connected to the database, run our query
-        connection.query(myQuery, function (err, result) {
-          if (err) throw err; //pagnagka error, mag crash
-          //check result from our query to the database
-          console.log("id result from database: ", result);
-        });
-      });
-    
-    response.send({"success": true})
-})
-
-app.post('/register', function (request, response) {
-    const usernameFromFrontEnd = request.body.username;
-    const passwordFromFrontEnd = request.body.password;
-
-    console.log('usernameFromFrontEnd: ', usernameFromFrontEnd);
-    console.log('passwordFromFrontEnd: ', passwordFromFrontEnd);
-
-
-    //mysql query to fetch the username and password from the database using the payload from
-    //the front end.
     const myQuery = `INSERT INTO first_database.users (username, password) VALUES ("${usernameFromFrontEnd}", "${passwordFromFrontEnd}")`;
     //in short select user from database where username = payload.username and password = payload.password
   
@@ -76,7 +37,7 @@ app.post('/register', function (request, response) {
     //create connection to our mysql database
     const connection = mysql.createConnection({
         host: "localhost", // ip or hostname
-        port: 3307,        // port if not using default port which is 3306
+        port: 3306,        // port if not using default port which is 3306
         user: "johndoe",      //database username 
         password: "password123",      //database password
         database: "first_database" // our database name
